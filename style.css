@@ -19,6 +19,7 @@ body{
 	background: rgba(0,0,0,0.2);
 	justify-content: center;
 	overflow: hidden;
+	position: fixed;
 }
 
 .pic{
