@@ -1,0 +1,240 @@
+html{
+	box-sizing: border-box;
+}
+
+* , *:before , *:after{
+	box-sizing: inherit;
+}	
+
+body{
+	width: 100%;
+	font-family: sans-serif;
+	margin: 0;
+	background: linear-gradient(260deg , #233 ,#c16ecf 100%);
+}
+
+.container{
+	width: 100%;
+	display: flex;
+	background: rgba(0,0,0,0.2);
+	justify-content: center;
+	overflow: hidden;
+}
+
+.pic{
+	height: 20px;
+	margin:auto;
+	flex:1;
+	background:(0,0,0,0.2);
+}
+
+.pic1{
+	
+	text-align: center;
+
+}
+
+.pic2{
+	text-align: center;
+}
+
+.pic3{
+	text-align: center;
+}
+
+.pic4{
+	text-align: center;
+}
+
+.flex-nav{
+	position: fixed;
+}
+
+li{
+	text-align: center;
+	display: inline-block;
+}
+a{
+	text-decoration: none;
+	color: white;
+	font-weight: 200;
+	letter-spacing: 1px;
+	list-style: none;
+	padding:10px 40px 10px 40px;
+	background: (255,0,0,0.2);
+	width: 100%;
+}
+
+a:hover{
+	background: rgba(0,0,0,0.3);
+	color: yellow;
+	font-size: 20px;
+}
+.wrapper{
+	width: 100%;
+	display: flex;
+	padding-left:200px;
+	
+}
+
+.flex-nav ul{
+	border: 0px solid black;
+	list-style: none;
+	margin:auto;
+}
+
+.flex-nav li{
+	flex:1;
+}
+
+.hero{
+	padding-bottom: 40px;
+	height: 90vh;
+	display: flex;
+	background-image: url(img/friends.jpg);
+	width: 100%;
+	background-repeat: no-repeat;
+	background-size: 100% 100%; 
+}	
+
+.hero img{
+	width: 70%;
+	height: 60%;
+	/*margin:15vh;*/
+	margin: auto;
+	border-style: solid;
+	border-width: 5px;
+	background-image: url(img/friends.jpg);
+	}
+
+.para{
+	text-align: center;
+	font-weight: 100;
+	font-family: 'Crimson Text', serif;
+	font-size: 18px;
+	background: rgba(0,0,0,0.2);
+	color: white;
+}
+
+.grid{
+	max-width: 1000px;
+	margin: 0 auto;
+	display: flex;
+	justify-content:flex-start;
+	flex-wrap: wrap;
+}
+
+.box{
+	width: 900px;
+	height: 660px;
+	flex :1;
+	background:rgba(255 , 255 , 255 , 0.2);
+	padding: 20px;
+	margin: 20px;
+}
+
+.box img{
+	width: 200px;
+	height: 300px;
+}
+
+.box1{
+	text-align: center;
+	font-style: italic;
+	font-weight: 100;
+}
+
+
+.box2{
+	text-align: center;
+	font-style: italic;
+	font-weight: 100;
+}
+
+
+.box3{
+	text-align: center;
+	font-style: italic;
+	font-weight: 100;
+}
+
+.box4{
+	text-align: center;
+	font-style: italic;
+	font-weight: 100;
+}
+
+.box5{
+	text-align: center;
+	font-style: italic;
+	font-weight: 100;
+}
+
+.box6{
+	text-align: center;
+	font-style: italic;
+	font-weight: 100;
+}
+
+.pogo img{
+	width:100%;
+	height: 70%;
+}
+
+.fa {
+  padding-right: 50px;
+  padding-left: 60px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 0 auto;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+/*
+@media {
+	.grid{
+		flex-wrap: wrap;
+		width: 100%;
+	}
+}
+*/
+@media screen and (max-width: 580px){
+	.image1{
+		
+	}
+}
+@media screen and (max-width : 500px){
+	.container{
+		flex-wrap: wrap;
+		font-size: 15px;
+	}
+}
+
+@media screen and (max-width: 500px){
+	.hero img{
+
+
+	}
+
+}
+
+@media screen and (max-width: 500px){
+	.fa{
+		flex-direction: column-wrap;
+	}
+}
