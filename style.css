@@ -372,3 +372,7 @@ h3{
 		flex-direction: column-wrap;
 	}
 }
+
+@media screen and (max-width: 500px){
+  
+}
