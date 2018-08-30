@@ -24,9 +24,9 @@ body {
 
 .logo{
 	background:(0,0,0,0.9);
+  color: white;
 	font-size: 30px;
 	font-family: 'Playfair Display', serif;
-  color: white;
 }
 
 /* navigation styles start here */
@@ -181,6 +181,7 @@ nav a:hover {
 	height: 90vh;
 	display: flex;
 	background-image: url(img/Friends.jpg);
+  background-attachment: fixed;
 	width: 100%;
 	background-repeat: no-repeat;
 	background-size: 100% 100%; 
@@ -366,7 +367,6 @@ h3{
     padding: 0px;
   }
 }
-
 @media screen and (max-width: 500px){
 	.fa{
 		flex-direction: column-wrap;
