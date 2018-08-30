@@ -26,6 +26,7 @@ body {
 	background:(0,0,0,0.9);
 	font-size: 30px;
 	font-family: 'Playfair Display', serif;
+  color: white;
 }
 
 /* navigation styles start here */
@@ -264,6 +265,51 @@ nav a:hover {
 	height: 70%;
 }
 
+.cube{
+  width: 100%;
+  height: 60px;
+  flex:1;
+  background-color: rgba(0,0,0,0.2);
+
+}
+
+.cube1{
+  text-align: center;
+}
+
+.cube2{
+  text-align: center;
+}
+
+.cube3{
+  text-align: center;
+}
+
+.cuboid{
+  max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.cuboid a{
+  color: white;
+  text-decoration: none;
+}
+
+.cuboid a:hover{
+  font-style: italic;
+  color: orange;
+}
+
+h3{
+  color: white;
+  text-transform: uppercase;
+  font-family:  'Nunito';
+}
+
+
+
 .fa {
   padding-right: 50px;
   padding-left: 60px;
@@ -309,11 +355,16 @@ nav a:hover {
 }
 
 @media screen and (max-width: 500px){
-	.hero img{
-
-
-	}
-
+  .cuboid{
+    flex-direction: column;
+    font-size: 12px;
+  }
+  .cube{
+    height: 30px;
+  }
+  .cube1{
+    padding: 0px;
+  }
 }
 
 @media screen and (max-width: 500px){
