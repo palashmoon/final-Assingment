@@ -23,7 +23,7 @@ body {
 }
 
 .logo{
-	background:(0,0,0,0.9);
+	background:rgba(0,0,0,0.1);
   color: white;
 	font-size: 30px;
 	font-family: 'Playfair Display', serif;
@@ -176,6 +176,11 @@ nav a:hover {
     transform: scale(1,1);
   }
 }
+
+h4{
+  display: none;
+}
+
 .hero{
 	padding:100px;
 	height: 90vh;
@@ -335,6 +340,10 @@ h3{
   color: white;
 }
 
+.foot p {
+  text-align: center;
+}
+
 /*
 @media {
 	.grid{
@@ -369,7 +378,8 @@ h3{
 }
 @media screen and (max-width: 500px){
 	.fa{
-		flex-direction: column-wrap;
+		flex-direction: column;
+    flex-wrap: wrap;
 	}
 }
 
