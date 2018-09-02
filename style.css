@@ -6,6 +6,8 @@ html{
 	box-sizing: inherit;
 }	
 
+/* body starts from here*/
+
 body {
 	margin: 0;
 	background: #222;
@@ -25,18 +27,18 @@ body {
 .logo{
 	background:rgba(0,0,0,0.1);
   color: white;
-	font-size: 30px;
-	font-family: 'Playfair Display', serif;
+  font-size: 30px;
+  font-family: 'Playfair Display', serif;
 }
 
-/* navigation styles start here */
+/*header  and navigation bar starts from here*/
 
 header {
  background:rgba(0, 0,0,0.1);
-  text-align: center;
-  position: fixed;
-  z-index: 999;
-  width: 100%;
+ text-align: center;
+ position: fixed;
+ z-index: 999;
+ width: 100%;
 }
 
 .nav-toggle {
@@ -134,7 +136,7 @@ nav a:hover {
   }
   
   .logo {
-    grid-column: 1 / 3;
+    grid-column: 2 / 3;
   }
   
   nav {
@@ -181,17 +183,19 @@ h4{
   display: none;
 }
 
-.hero{
+
+/* css for the hero image begans from here*/
+
+.example{
 	padding:100px;
 	height: 90vh;
 	display: flex;
 	background-image: url(img/Friends.jpg);
   background-attachment: fixed;
-	width: 100%;
-	background-repeat: no-repeat;
-	background-size: 100% 100%; 
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: 100% 100%; 
 }	
-
 
 .para{
 	text-align: center;
@@ -201,6 +205,9 @@ h4{
 	background: rgba(0,0,0,0.2);
 	color: white;
 }
+
+
+/*css for the 3 coloumn portion */
 
 .grid{
 	max-width: 1000px;
@@ -222,6 +229,10 @@ h4{
 .box img{
 	width: 200px;
 	height: 300px;
+}
+
+.box img:hover{
+  transform: scale(1.1);
 }
 
 .box1{
@@ -262,6 +273,8 @@ h4{
 	font-weight: 100;
 }
 
+/*css for the footer*/
+
 .amazon a{
 	color: yellow;
 }
@@ -271,42 +284,37 @@ h4{
 	height: 70%;
 }
 
-.cube{
-  width: 100%;
-  height: 60px;
-  flex:1;
-  background-color: rgba(0,0,0,0.2);
+/* button for footer*/
 
-}
-
-.cube1{
-  text-align: center;
-}
-
-.cube2{
-  text-align: center;
-}
-
-.cube3{
-  text-align: center;
-}
-
-.cuboid{
-  max-width: 100%;
+.button{
+  margin: 10px auto;
+  display: -webkit-box;   
+  display: -moz-box;  
+  display: -ms-flexbox; 
+  display: -webkit-flex; 
   display: flex;
-  flex-wrap: wrap;
+  -webkit-flex-direction: row;
+  -moz-flex-direction: row;
   flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  max-width: 50%;
 }
 
-.cuboid a{
+.button a{
+  flex:1;
+  background:blue;
+  font-size: .9em;
+  margin: .3em;
   color: white;
   text-decoration: none;
+  text-align: center;
 }
 
-.cuboid a:hover{
-  font-style: italic;
-  color: orange;
+.button a:hover{
+  background-color:#EF75E0  ;
 }
+
 
 h3{
   color: white;
@@ -314,7 +322,7 @@ h3{
   font-family:  'Nunito';
 }
 
-
+/*css for social media content*/
 
 .fa {
   padding-right: 50px;
@@ -327,7 +335,7 @@ h3{
 }
 
 .fa:hover {
-    opacity: 0.7;
+  opacity: 0.7;
 }
 
 .fa-facebook {
@@ -342,19 +350,50 @@ h3{
 
 .foot p {
   text-align: center;
+  color: white;
 }
 
-/*
-@media {
-	.grid{
-		flex-wrap: wrap;
-		width: 100%;
-	}
+.amazon{
+  color: grey;
 }
-*/
+
+.foot a{
+  text-decoration: none;
+}
+.fa-facebook-square{
+  color:  #0a87d3 ;
+}
+
+.fa-facebook-square:hover{
+  color:#0b15de;
+  transform: scale(2);
+}
+
+.fa-twitter-square{
+  color:#00aced;
+}
+
+.fa-twitter-square:hover{
+  color:#c0deed;
+  transform:scale(2);
+}
+
+.fa-instagram{
+  color:#ded1c1;
+}
+
+.fa-instagram:hover{
+  color: yellow;
+  transform:scale(2);
+}
+
+
+/* media quires for the smaller screen */
+
+
 @media screen and (max-width: 580px){
-	.image1{
-		
+	.box img:hover{
+		transform: scale(1);
 	}
 }
 @media screen and (max-width : 500px){
@@ -365,24 +404,21 @@ h3{
 }
 
 @media screen and (max-width: 500px){
-  .cuboid{
+  .button{
     flex-direction: column;
     font-size: 12px;
   }
-  .cube{
-    height: 30px;
-  }
-  .cube1{
-    padding: 0px;
-  }
 }
+
 @media screen and (max-width: 500px){
 	.fa{
 		flex-direction: column;
     flex-wrap: wrap;
-	}
+  }
 }
 
-@media screen and (max-width: 500px){
-  
+@media screen and (max-width: 400px){
+  .example{
+    background-image: url(img/central.jpg);
+  }
 }
